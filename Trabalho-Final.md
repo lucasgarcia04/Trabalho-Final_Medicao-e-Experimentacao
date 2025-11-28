@@ -9,11 +9,13 @@ Avaliação do Impacto do Uso de IA em IDEs na Produtividade de Desenvolvedores 
 EXP-IA-PROD-001  
 
 ## 1.3 Versão do Documento e Histórico de Revisão
-- **v1.0 – (23/11/2025)**: Criação inicial do documento e topicos 1 e 2.  
+- **v1.0 – (23/11/2025)**: Criação inicial do documento e topicos 1 e 2.
+- **v2.0 – (24/11/2025)**: Criação dos topicos 3, 4, 5 e 6.
+- **v3.0 – (28/11/2025)**: Criação dos topicos 7, 8 , 9.  
 
 ## 1.4 Datas
 - **Data de criação:** 23/11/2025  
-- **Última atualização:** 23/11/2025    
+- **Última atualização:** 28/11/2025    
 
 ## 1.5 Autores (nome, área, contato)
 - **Nome:** Lucas Ferreira Garcia  
@@ -244,6 +246,207 @@ O experimento será considerado bem-sucedido se:
 - Falhas críticas no ambiente técnico  
 - Impossibilidade de acessar o Copilot  
 - Problemas éticos ou organizacionais no uso da IA  
+
+---
+
+# 7. Modelo conceitual e hipóteses
+
+## 7.1 Modelo conceitual do experimento
+Acredita-se que **o uso de uma ferramenta de IA de assistência à programação (GitHub Copilot)** influencia positivamente a produtividade de desenvolvedores iniciantes, reduzindo o tempo necessário para concluir tarefas e possivelmente melhorando a qualidade do código.
+
+**Esquema conceitual:**
+Uso de IA em IDEs -> Aumento de produtividade -> Possível redução de erros -> Aumento de qualidade
+
+O modelo assume que:
+- A IA sugere trechos de código automaticamente.
+- Isso reduz esforço cognitivo e tempo.
+- Pode gerar códigos com menor quantidade de erros.
+- Logo, o fator uso da IA impacta diretamente nas variáveis de produtividade e qualidade.
+
+---
+
+## 7.2 Hipóteses formais (H0 e H1)
+
+### Hipótese sobre produtividade (tempo)
+- **H0:** Não há diferença significativa no tempo de conclusão entre os grupos.  
+- **H1:** O grupo com IA conclui as tarefas em menos tempo.
+
+### Hipótese sobre qualidade (defeitos)
+- **H0:** Não há diferença significativa no número de defeitos entre os grupos.  
+- **H1:** O grupo com IA produz menos defeitos.
+
+### Hipótese sobre esforço percebido
+- **H0:** Não há diferença significativa no esforço percebido entre os grupos.  
+- **H1:** O grupo com IA relata menos esforço percebido.
+
+---
+
+## 7.3 Nível de significância e poder estatístico
+- **Nível de significância adotado:** α = 0,05  
+- **Poder estatístico esperado:** entre 0,70 e 0,80  
+- **Justificativa:** amostra pequena típica de ambientes acadêmicos; o experimento detecta apenas efeitos médios ou grandes.
+
+---
+
+# 8. Variáveis, fatores, tratamentos e objetos de estudo
+
+## 8.1 Objetos de estudo
+- Tarefas de programação de pequena e média complexidade (funções, correção de bugs).
+- Código produzido pelos participantes.
+- Indicadores registrados (tempo, defeitos, esforço etc.).
+
+---
+
+## 8.2 Sujeitos / participantes
+- Estudantes de Engenharia de Software ou desenvolvedores juniores.
+- Experiência prática limitada.
+- Perfil homogêneo em nível de habilidade inicial.
+
+---
+
+## 8.3 Variáveis independentes (fatores) e seus níveis
+
+| Fator | Descrição | Níveis |
+|-------|-----------|--------|
+| Uso da IA | Uso de ferramenta de apoio à programação | Sem IA (controle), Com IA (Copilot) |
+
+---
+
+## 8.4 Tratamentos (condições experimentais)
+
+| Tratamento | Descrição |
+|------------|-----------|
+| T0 – Sem IA | Participantes resolvem a tarefa sem qualquer sugestão automática. |
+| T1 – Com IA | Participantes resolvem a mesma tarefa com GitHub Copilot habilitado. |
+
+---
+
+## **Tabela — Fatores, Tratamentos e Combinações**
+
+Como há apenas **um fator com dois níveis**, as combinações possíveis são:
+
+| Fator | Tratamento | Código | Combinação |
+|--------|-------------|---------|------------|
+| Uso da IA | Sem IA | T0 | F1–Nível 0 |
+| Uso da IA | Com IA | T1 | F1–Nível 1 |
+
+---
+
+## 8.5 Variáveis dependentes (respostas)
+
+| Variável | Tipo | Descrição |
+|----------|-------|------------|
+| Tempo de execução | Quantitativa contínua | Tempo total (em minutos) para concluir a tarefa. |
+| Número de defeitos | Quantitativa discreta | Quantidade de erros encontrados na inspeção posterior. |
+| Esforço percebido | Qualitativa ordinal | Autoavaliação do esforço (escala Likert 1–5). |
+| Linhas de código | Quantitativa discreta | Total de LOC produzidas. |
+| Taxa de aceitação das sugestões | Quantitativa contínua | Percentual de sugestões do Copilot aceitas (somente grupo T1). |
+
+---
+
+## 8.6 Variáveis de controle / bloqueio
+
+| Variável | Justificativa |
+|----------|---------------|
+| Complexidade da tarefa | Mantida igual para todos para evitar vieses. |
+| Ambiente de desenvolvimento | Todos usam o mesmo IDE/linguagem. |
+| Tempo máximo permitido | Garante igualdade de condições. |
+| Perfil dos participantes | Todos iniciantes, reduzindo variação de habilidade. |
+
+---
+
+## 8.7 Variáveis de confusão potenciais
+
+| Possível Confundidor | Risco causado |
+|----------------------|---------------|
+| Familiaridade prévia com IA | Pode favorecer o grupo tratamento. |
+| Diferenças individuais de habilidade | Pode distorcer tempo ou qualidade. |
+| Motivação e fadiga | Afetam esforço e performance. |
+| Ruído no ambiente | Diminui foco e afeta produtividade. |
+
+---
+
+# 9. Desenho experimental
+
+## 9.1 Tipo de desenho
+- **Desenho completamente randomizado entre sujeitos**
+
+Justificativas:
+- Evita que um participante execute a mesma tarefa 2 vezes (efeito de aprendizado).
+- Simples de implementar.
+- Minimiza fadiga.
+
+---
+
+## 9.2 Randomização e alocação
+- Distribuição aleatória dos participantes usando planilha, random.org ou script simples.
+- Tamanho dos grupos balanceado.
+- Participantes não escolhem grupo.
+
+---
+
+## 9.3 Balanceamento e contrabalanço 
+
+### Balanceamento
+- Aplicar **pré-questionário** para medir experiência e familiaridade com programação/IA.  
+- Criar **faixas de experiência** e realizar **alocação aleatória dentro de cada faixa** (estratificação).  
+- Manter **mesmo número de participantes** por grupo (A: sem IA, B: com IA).  
+- Padronizar ambiente: mesmas máquinas, IDE, linguagem e instruções.  
+- Realizar **tarefa de aquecimento** curta antes da sessão principal.
+
+### Contrabalanço
+- Não aplicável ao desenho entre-sujeitos (cada participante faz apenas um tratamento).  
+- Mitigações adicionais:
+  - Sessão única + tarefa única.
+  - Proibir compartilhamento de soluções entre participantes.
+  - Usar tarefa de prática para reduzir efeito de aquecimento.
+
+---
+
+## 9.4 Número de grupos e sessões 
+
+### Grupos
+- 2 grupos:
+  - Grupo A (Controle): sem IA.
+  - Grupo B (Tratamento): com IA.
+
+### Sessões
+- 1 sessão por participante, duração estimada de 30–40 min.  
+- Antes: 10–15 min para consentimento + pré-questionário.  
+- Tarefa de aquecimento: 5–10 min.
+
+### Justificativa
+- Evita efeitos de ordem/aprendizagem entre condições.  
+- Reduz fadiga e facilita logística.  
+- Adequado quando há risco de carry-over.
+
+### Amostra recomendada
+- Mínimo: 16–20 participantes (8–10 por grupo).  
+- Ideal: 24–40 participantes (12–20 por grupo).  
+- Diferença máxima entre grupos: Nenhuma.
+
+### Logística
+- Sessões em blocos de 1 hora.  
+- Se houver várias máquinas, rodar em paralelo mantendo proporção A:B equilibrada.  
+- Aplicador acompanha cada bloco e registra eventuais problemas.
+
+---
+
+# **Tabela geral - Variáveis do experimento**
+
+| Nome da Variável | Tipo | Independente/Dependente/Controle | Descrição | Unidade |
+|------------------|------|----------------------------------|-----------|---------|
+| Uso da IA | Categórica | Independente | Presença ou ausência do Copilot | N/A |
+| Tempo de execução | Contínua | Dependente | Tempo para concluir a tarefa | Minutos |
+| Número de defeitos | Discreta | Dependente | Total de defeitos identificados | Contagem |
+| Esforço percebido | Ordinal | Dependente | Autoavaliação do esforço | Escala 1–5 |
+| Linhas de código | Discreta | Dependente | Total de linhas escritas | LOC |
+| Taxa de aceitação de sugestões | Contínua | Dependente | % de sugestões aceitas | Percentual |
+| Complexidade da tarefa | Categórica | Controle | Tarefa padrão para todos | N/A |
+| Ambiente de desenvolvimento | Categórica | Controle | IDE e linguagem usados | N/A |
+| Experiência do participante | Categórica | Controle/Bloqueio | Todos iniciantes | N/A |
+| Tempo máximo permitido | Contínua | Controle | Tempo limite da sessão | Minutos |
+
 
 
 
