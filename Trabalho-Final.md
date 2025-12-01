@@ -11,11 +11,12 @@ EXP-IA-PROD-001
 ## 1.3 Versão do Documento e Histórico de Revisão
 - **v1.0 – (23/11/2025)**: Criação inicial do documento e topicos 1 e 2.
 - **v2.0 – (24/11/2025)**: Criação dos topicos 3, 4, 5 e 6.
-- **v3.0 – (28/11/2025)**: Criação dos topicos 7, 8 , 9.  
+- **v3.0 – (28/11/2025)**: Criação dos topicos 7, 8 , 9.
+- **v4.0 – (01/12/2025)**: Criação dos topicos 10, 11 e 12. 
 
 ## 1.4 Datas
 - **Data de criação:** 23/11/2025  
-- **Última atualização:** 28/11/2025    
+- **Última atualização:** 01/12/2025    
 
 ## 1.5 Autores (nome, área, contato)
 - **Nome:** Lucas Ferreira Garcia  
@@ -447,6 +448,133 @@ Justificativas:
 | Experiência do participante | Categórica | Controle/Bloqueio | Todos iniciantes | N/A |
 | Tempo máximo permitido | Contínua | Controle | Tempo limite da sessão | Minutos |
 
+---
+
+# 10. População, sujeitos e amostragem
+
+## 10.1 População-alvo
+A população-alvo são **desenvolvedores iniciantes** (0–2 anos de experiência) que programam regularmente em linguagens como **JavaScript ou Python** em ambientes de desenvolvimento comuns (VS Code). Representa estudantes de computação, estagiários e juniores atuando em equipes de desenvolvimento web ou backend.
+
+## 10.2 Critérios de inclusão
+- Idade ≥ 18 anos.  
+- Saber programar ao menos em nível introdutório.  
+- Ter feito ao menos 1 disciplina de programação.  
+- Conseguir realizar leitura e escrita básica de código.  
+- Disponibilidade de 1 hora para o experimento.  
+
+## 10.3 Critérios de exclusão
+- Experiência profissional > 2 anos em desenvolvimento.  
+- Uso frequente (> 3 meses) de GitHub Copilot ou ferramentas de IA de autocompletar.  
+- Participantes que já fizeram piloto ou versões anteriores do experimento.  
+- Conflitos de interesse (ex.: monitor responsável pela tarefa).  
+
+## 10.4 Tamanho da amostra planejado
+- **Total planejado:** 20 a 30 participantes.  
+- **Por grupo:** 10–15 por grupo (A: Sem IA, B: Com IA).  
+- Justificativa: tamanho suficiente para detectar efeitos médios, dentro das restrições de tempo e disponibilidade.
+
+## 10.5 Método de seleção / recrutamento
+- **Amostra de conveniência**, recrutada entre:
+  - estudantes de cursos de computação,  
+  - comunidade acadêmica,  
+  - alunos voluntários de disciplina de Engenharia de Software.  
+- Recrutamento via e-mail, grupo de turma ou formulário.
+
+## 10.6 Treinamento e preparação dos sujeitos
+- Guia rápido sobre:
+  - IDE utilizada (VS Code),
+  - linguagem da tarefa,
+  - regras do experimento,
+  - exemplos simples de entrada e saída.  
+- Tarefa de aquecimento de 5–10 min para nivelar familiaridade com o ambiente.
+
+---
+
+# 11. Instrumentação e protocolo operacional
+
+## 11.1 Instrumentos de coleta
+- **Questionário pré-experimento**: coleta experiência, familiaridade e covariáveis.
+- **VS Code + extensão de log**: registra tempo de digitação, comandos, pausas, checkpoints.
+- **Formulário pós-experimento**: coleta percepção, dificuldade, confiança.
+- **Planilha de controle do pesquisador**: horário de início/fim, problemas técnicos.
+- **Repositório Git**: usado para armazenar soluções finais e medir métricas objetivas.
+
+## 11.2 Materiais de suporte
+- Roteiro impresso com instruções.  
+- Guia rápido da tarefa (descrição + exemplos de entrada/saída).  
+- Checklist para administradores.  
+- Script padronizado de instruções verbais.  
+
+## 11.3 Procedimento experimental (passo a passo)
+
+### Fluxograma operacional (ASCII)
+   <img width="329" height="776" alt="image" src="https://github.com/user-attachments/assets/13e20682-e739-4718-a6ec-85a4f271f74c" />
 
 
+### Roteiro detalhado
+1. Apresentação, convite e assinatura do termo de consentimento.  
+2. Aplicação do pré-questionário.  
+3. Classificação por experiência e alocação aleatória dentro das faixas para Grupo A/B.  
+4. Explicação padronizada do ambiente e regras.  
+5. Execução da tarefa de aquecimento (5–10 min).  
+6. Início da tarefa principal (30–40 min) com o ambiente configurado:  
+   - Grupo A: GitHub Copilot desativado.  
+   - Grupo B: GitHub Copilot ativado.  
+   - Logs coletados automaticamente.  
+7. Finalização da tarefa no tempo limite.  
+8. Aplicação do questionário pós-experimento.  
+9. Salvamento seguro dos arquivos e logs.  
+10. Encerramento e agradecimento.
+
+---
+
+## 11.4 Plano de piloto
+- Sim, haverá piloto.  
+- Participantes: 2–3 estudantes que **não** farão parte da amostra final.  
+- Objetivos:
+  - medir viabilidade do tempo,  
+  - validar instruções e clareza da tarefa,  
+  - testar logs e instrumentos.  
+- Ajustes possíveis:
+  - refinamento da tarefa,
+  - ajustes no tempo,
+  - melhoria na clareza das instruções,
+  - correção de falhas técnicas.
+
+---
+
+# 12. Plano de análise de dados (pré-execução)
+
+## 12.1 Estratégia geral de análise
+- Avaliar diferenças entre grupos A e B em relação a:
+  - produtividade (tempo para completar),  
+  - qualidade da solução,  
+  - taxa de erros/sucessos,  
+  - percepção subjetiva (esforço e dificuldade).  
+- Responder às perguntas:
+  - O Copilot aumenta produtividade de iniciantes?  
+  - Afeta a qualidade ou somente a velocidade?  
+  - Como os usuários percebem a ferramenta?
+
+## 12.2 Métodos estatísticos planejados
+- Teste t para dois grupos (se distribuição normal).  
+- Mann–Whitney para dados não normais.  
+- ANOVA de 1 fator (grupo A vs B) se houver múltiplas métricas.  
+- Correlação entre experiência prévia e desempenho.  
+- Regressão linear simples/múltipla para controlar covariáveis (ex.: experiência).
+
+## 12.3 Tratamento de dados faltantes e outliers
+- Dados faltantes:
+  - Remoção de participantes que não concluírem a tarefa.  
+  - Interpolação não será utilizada (risco de viés).  
+- Outliers:
+  - Identificação via boxplot e z-score.  
+  - Outliers serão analisados individualmente e marcados; podem ser removidos se houver justificativa (falha técnica, interrupção externa).
+
+## 12.4 Análise de dados qualitativos
+- Respostas abertas serão analisadas via:
+  - codificação temática inicial,  
+  - categorização (ex.: facilidade, dificuldade, frustração, percepção de ajuda),  
+  - contagem de frequência e citações representativas.  
+- Comentários serão usados para complementar interpretações quantitativas.
 
