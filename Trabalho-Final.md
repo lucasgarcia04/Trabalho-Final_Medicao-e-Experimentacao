@@ -13,10 +13,11 @@ EXP-IA-PROD-001
 - **v2.0 – (24/11/2025)**: Criação dos topicos 3, 4, 5 e 6.
 - **v3.0 – (28/11/2025)**: Criação dos topicos 7, 8 , 9.
 - **v4.0 – (01/12/2025)**: Criação dos topicos 10, 11 e 12. 
+- **v5.0 – (05/12/2025)**: Criação dos topicos 13. 
 
 ## 1.4 Datas
 - **Data de criação:** 23/11/2025  
-- **Última atualização:** 01/12/2025    
+- **Última atualização:** 05/12/2025    
 
 ## 1.5 Autores (nome, área, contato)
 - **Nome:** Lucas Ferreira Garcia  
@@ -577,4 +578,71 @@ A população-alvo são **desenvolvedores iniciantes** (0–2 anos de experiênc
   - categorização (ex.: facilidade, dificuldade, frustração, percepção de ajuda),  
   - contagem de frequência e citações representativas.  
 - Comentários serão usados para complementar interpretações quantitativas.
+
+---
+
+# 13. Avaliação de validade (ameaças e mitigação)
+
+## 13.1 Validade de conclusão
+- **Ameaças:**
+  - Baixo poder estatístico devido ao tamanho reduzido da amostra.
+  - Violação de suposições dos testes estatísticos (normalidade, homocedasticidade).
+  - Medidas imprecisas de produtividade ou qualidade.
+- **Mitigações:**
+  - Assegurar tamanho de amostra compatível com os testes planejados.
+  - Testar normalidade e escolher métodos robustos quando necessário (ex.: Mann–Whitney).
+  - Padronizar instrumentos de coleta e revisar métricas no estudo piloto.
+  - Registrar todos os procedimentos para reduzir erros de medida.
+
+---
+
+## 13.2 Validade interna
+- **Ameaças:**
+  - **Selection:** diferenças pré-existentes entre os participantes de cada grupo.
+  - **History:** influências externas durante a realização do experimento (interrupções, conversas, distrações).
+  - **Maturation:** aprendizado natural durante a atividade pode afetar o desempenho.
+  - **Instrumentation:** variações no registro, aplicação das tarefas ou ferramentas.
+- **Mitigações:**
+  - Randomização dos participantes entre os grupos A e B.
+  - Ambientação controlada e aplicação padronizada do experimento.
+  - Utilização de tarefas únicas e de curta duração para reduzir maturação.
+  - Mesmos instrumentos e logs para todos os participantes.
+  - Ajustes feitos por meio do piloto para reduzir inconsistências.
+
+---
+
+## 13.3 Validade de constructo
+- **Ameaças:**
+  - Métricas de "produtividade", "qualidade" e "esforço" não representarem corretamente os conceitos teóricos.
+  - Possíveis interpretações diferentes da tarefa ou das instruções pelos participantes.
+  - Participantes tentarem adivinhar a hipótese, influenciando o comportamento.
+- **Mitigações:**
+  - Definir operacionalizações claras (ex.: tempo, taxa de erros, completude da solução, escalas de esforço).
+  - Refinar instruções após o piloto, garantindo clareza e interpretação consistente.
+  - Não revelar a hipótese do estudo, reduzindo viés de expectativa.
+  - Usar múltiplas métricas para reforçar validade convergente.
+
+---
+
+## 13.4 Validade externa
+- **Ameaças:**
+  - Amostra limitada a estudantes iniciantes, dificultando generalização para profissionais.
+  - Tarefas simples e curtas que não representam totalmente atividades reais de desenvolvimento.
+  - Ambiente experimental mais controlado que cenários reais de programação.
+- **Mitigações:**
+  - Descrever detalhadamente características da amostra, permitindo comparações com outros contextos.
+  - Selecionar tarefas representativas, mesmo que simplificadas.
+  - Discutir explicitamente limitações de generalização e sugerir replicações futuras em contextos profissionais.
+
+---
+
+## 13.5 Resumo das principais ameaças e estratégias de mitigação
+
+| Tipo de validade | Ameaças principais | Estratégias de mitigação |
+|------------------|-------------------|---------------------------|
+| **Conclusão** | Baixo poder; violação de suposições; medidas imprecisas | Aumento da amostra; testes robustos; padronização dos instrumentos |
+| **Interna** | Seleção; history; instrumentation; maturation | Randomização; ambiente controlado; tarefas curtas; estudo piloto |
+| **Constructo** | Métricas inadequadas; ambiguidades; viés de expectativa | Definições claras; revisão das instruções; ocultar hipóteses |
+| **Externa** | Amostra limitada; tarefas pouco realistas; ambiente artificial | Descrição do contexto; tarefas representativas; replicações futuras |
+
 
