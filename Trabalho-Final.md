@@ -13,11 +13,12 @@ EXP-IA-PROD-001
 - **v2.0 – (24/11/2025)**: Criação dos topicos 3, 4, 5 e 6.
 - **v3.0 – (28/11/2025)**: Criação dos topicos 7, 8 , 9.
 - **v4.0 – (01/12/2025)**: Criação dos topicos 10, 11 e 12. 
-- **v5.0 – (05/12/2025)**: Criação dos topicos 13. 
+- **v5.0 – (05/12/2025)**: Criação dos topicos 13.
+- **v6.0 – (11/12/2025)**: Criação dos topicos 14, 15, 16, 17, 18 e 19.  
 
 ## 1.4 Datas
 - **Data de criação:** 23/11/2025  
-- **Última atualização:** 05/12/2025    
+- **Última atualização:** 11/12/2025    
 
 ## 1.5 Autores (nome, área, contato)
 - **Nome:** Lucas Ferreira Garcia  
@@ -644,5 +645,273 @@ A população-alvo são **desenvolvedores iniciantes** (0–2 anos de experiênc
 | **Interna** | Seleção; history; instrumentation; maturation | Randomização; ambiente controlado; tarefas curtas; estudo piloto |
 | **Constructo** | Métricas inadequadas; ambiguidades; viés de expectativa | Definições claras; revisão das instruções; ocultar hipóteses |
 | **Externa** | Amostra limitada; tarefas pouco realistas; ambiente artificial | Descrição do contexto; tarefas representativas; replicações futuras |
+
+---
+
+# 14. Ética, privacidade e conformidade
+
+## 14.1 Questões éticas
+Esta seção trata das principais preocupações referentes ao bem-estar dos participantes e ao cuidado necessário para garantir que a participação no experimento seja justa, segura e livre de coerção. Como o estudo envolve estudantes iniciantes, é importante garantir que eles não se sintam pressionados, intimidados ou expostos.
+
+### Possíveis questões éticas
+- **Pressão implícita para participar:** como o experimento pode ocorrer dentro de uma disciplina, alguns estudantes podem achar que precisam participar para agradar o professor ou evitar prejuízo.
+- **Sensação de avaliação:** iniciantes podem interpretar a atividade como uma “prova”, gerando desconforto ou ansiedade.
+- **Incentivos inadequados:** recompensas muito grandes podem influenciar a decisão, afetando a voluntariedade.
+- **Risco de exposição:** métricas de desempenho (tempo, erros, qualidade do código) podem acabar revelando alunos com mais dificuldade.
+
+### Tratamento das questões éticas
+Cada risco ético será mitigado de forma clara e formal:
+- A participação será **voluntária**, sem qualquer impacto em notas ou avaliação da disciplina.
+- Reforço explícito de que o desempenho não será usado como medida de competência.
+- Garantia de que nenhum resultado individual será divulgado ou comparado com outros participantes.
+- Qualquer incentivo será discreto e não coercitivo (ex.: horas complementares).
+- Todos os dados divulgados serão anônimos, assegurando proteção da identidade.
+
+---
+
+## 14.2 Consentimento informado
+Antes de iniciar o experimento, cada participante receberá um termo de consentimento que explica, de forma clara e acessível:
+
+- o objetivo geral do estudo,
+- como o experimento será conduzido,
+- quais riscos e desconfortos mínimos podem existir,
+- quais benefícios ou aprendizados o participante pode obter,
+- que a participação é voluntária e que o participante pode desistir a qualquer momento,
+- que os dados serão usados apenas para fins acadêmicos e sempre de forma anônima.
+
+O consentimento será documentado por assinatura física ou digital, garantindo que o participante esteja plenamente informado.
+
+---
+
+## 14.3 Privacidade e proteção de dados
+O experimento coleta dados sensíveis sobre desempenho e perfil dos participantes, portanto é necessário definir mecanismos formais para proteger essas informações.
+
+### Dados coletados
+Serão coletados:
+- tempo para execução das tarefas,
+- métricas do código produzido,
+- registros automáticos (logs),
+- respostas a questionários antes e depois do experimento,
+- informações básicas de experiência prévia em programação.
+
+### Proteção aplicada
+Para garantir segurança:
+- Todos os dados serão anonimizados com identificadores aleatórios.
+- O repositório com dados será privado, com acesso restrito apenas à equipe autorizada.
+- Nenhum código ou log conterá nome ou identificação pessoal.
+
+### Retenção e descarte
+- Os dados serão armazenados por até **12 meses**, apenas para auditoria e análise.
+- Após esse período, ocorrerá descarte seguro ou anonimização completa e irreversível.
+
+---
+
+## 14.4 Aprovações necessárias
+Para que o experimento seja formalmente autorizado, algumas instâncias precisam avaliar e aprovar o plano:
+
+- **Comitê de Ética em Pesquisa**, caso o estudo se enquadre nas normas da instituição.
+- **DPO (Data Protection Officer)**, para garantir conformidade com LGPD.
+- **Orientadores e professores** responsáveis pela disciplina.
+  
+**Status atual:** aguardando envio dos documentos para análise.
+
+---
+
+# 15. Recursos, infraestrutura e orçamento
+
+## 15.1 Recursos humanos e papéis
+Esta seção define quem são os responsáveis por cada etapa do experimento:
+
+- **Pesquisador principal:** concebe o experimento, conduz a análise e toma decisões principais.
+- **Assistente de aplicação:** organiza as sessões, apoia tecnicamente os participantes e resolve problemas operacionais.
+- **Avaliador de qualidade:** verifica os códigos e artefatos produzidos pelos participantes.
+- **Participantes:** estudantes voluntários que executarão as tarefas experimentais.
+
+---
+
+## 15.2 Infraestrutura técnica necessária
+O experimento depende de ambiente técnico padronizado para garantir consistência entre sessões:
+
+- laboratório equipado com computadores semelhantes,
+- acesso ao GitHub Copilot para o grupo experimental,
+- uso do VS Code como IDE padrão,
+- scripts automáticos de coleta de métricas,
+- um repositório Git privado para armazenar dados.
+
+---
+
+## 15.3 Materiais e insumos
+Além da infraestrutura técnica, alguns materiais e documentos devem estar prontos antes da execução:
+
+- termos de consentimento,
+- questionários de pré e pós-experimento,
+- máquinas configuradas com todos os softwares,
+- eventuais licenças temporárias para uso do Copilot,
+- planilhas e checklists para padronizar o processo.
+
+---
+
+## 15.4 Orçamento e custos estimados
+O custo do experimento é considerado baixo, porque envolve principalmente esforço humano:
+
+- licenças do Copilot (caso necessárias),
+- cerca de 10–20 horas da equipe para preparo e aplicação,
+- eventuais cópias impressas de documentos.
+
+O orçamento total é mínimo, sendo mais associado ao tempo das pessoas envolvidas.
+
+---
+
+# 16. Cronograma, marcos e riscos operacionais
+
+## 16.1 Macrocronograma
+Este cronograma mostra a sequência geral das atividades até a análise dos resultados:
+
+| Marco | Data prevista |
+|-------|---------------|
+| Finalização do plano | Semana 1 |
+| Preparação dos instrumentos | Semana 2 |
+| Execução do piloto | Semana 3 |
+| Ajustes pós-piloto | Semana 4 |
+| Sessões do experimento | Semana 5 |
+| Análise inicial dos dados | Semana 6 |
+
+---
+
+## 16.2 Dependências entre atividades
+Algumas atividades só podem ocorrer depois de outras estarem concluídas:
+
+- O piloto só pode ocorrer após os instrumentos estarem concluídos.
+- O treinamento dos facilitadores só ocorre após a aprovação ética.
+- A execução depende da configuração das máquinas e da confirmação dos participantes.
+- A análise só é possível após o encerramento da coleta de dados.
+
+---
+
+## 16.3 Riscos operacionais e contingência
+O experimento pode enfrentar imprevistos; por isso, planos de contingência foram preparados:
+
+- **Baixa adesão:** iniciar recrutamento mais cedo e oferecer mais horários.
+- **Problemas técnicos:** manter computadores extras e backups do ambiente.
+- **Falhas nos scripts de logging:** validar no piloto e ter coleta manual como alternativa.
+- **Interferências externas:** reservar sala protegida de ruídos e interrupções.
+
+---
+
+# 17. Governança do experimento
+
+## 17.1 Papéis e responsabilidades
+A governança define claramente quem faz o quê, evitando confusões ou lacunas:
+
+- **Pesquisador principal:** supervisiona tudo e toma as decisões-chave.
+- **Assistente técnico:** garante que o ambiente esteja funcionando corretamente.
+- **Monitor da sala:** cuida da disciplina e da padronização durante a aplicação.
+- **Avaliador externo:** assegura que os resultados e análises sejam revisados de forma objetiva.
+
+---
+
+## 17.2 Ritos de acompanhamento pré-execução
+Para manter alinhamento entre todos os envolvidos, serão realizadas:
+
+- reuniões semanais antes do piloto,
+- uma revisão completa dos instrumentos antes da primeira sessão,
+- um checkpoint pós-piloto para ajustes,
+- uma validação final antes do início do experimento.
+
+---
+
+## 17.3 Controle de mudanças no plano
+Caso seja necessário modificar qualquer elemento do experimento:
+
+- a mudança será registrada como *issue* no repositório,
+- discutida em reunião rápida,
+- submetida à aprovação do orientador,
+- documentada na nova versão oficial do plano.
+
+---
+
+# 18. Plano de documentação e reprodutibilidade
+
+## 18.1 Repositórios e convenções
+Para garantir organização e rastreabilidade, todo o material ficará em um repositório Git:
+
+- pastas organizadas por função (instrumentos, scripts, dados brutos, análises),
+- nomes padronizados seguindo `exp-IA-2025_<artefato>`.
+
+---
+
+## 18.2 Templates e artefatos padrão
+A equipe utilizará modelos e artefatos consistentes para facilitar a aplicação do experimento:
+
+- questionários padronizados,
+- termo de consentimento,
+- checklist operacional,
+- script unificado de logging.
+
+---
+
+## 18.3 Empacotamento para replicação futura
+Para permitir que outros pesquisadores reproduzam o experimento:
+
+- haverá um README com instruções completas,
+- scripts automatizados de setup serão disponibilizados,
+- datasets anonimizados serão preservados,
+- um guia detalhando como repetir a análise estatística será incluído.
+
+---
+
+# 19. Plano de comunicação
+
+## 19.1 Públicos e mensagens-chave
+A comunicação garante que cada grupo receba as informações necessárias:
+
+- **Participantes:** objetivo, datas, regras e voluntariedade.
+- **Professores/orientador:** riscos, cronograma e status das etapas.
+- **Equipe técnica:** requisitos de equipamentos e prazos.
+
+---
+
+## 19.2 Canais e frequência
+As comunicações ocorrerão por:
+
+- e-mail e Discord/Teams semanalmente,
+- reunião rápida antes da execução,
+- canal privado diário para equipe técnica.
+
+---
+
+## 19.3 Pontos de comunicação obrigatórios
+Alguns eventos exigem comunicação formal e imediata:
+
+- aprovação ética,
+- liberação dos instrumentos finais,
+- mudanças em datas ou logística,
+- encerramento e próximos passos.
+
+---
+
+# 20. Critérios de prontidão (Definition of Ready)
+
+## 20.1 Checklist de prontidão
+Antes de iniciar o experimento, tudo isso deve estar concluído:
+
+- plano aprovado,
+- instrumentos validados no piloto,
+- ambiente técnico configurado,
+- consentimento pronto,
+- cronograma confirmado,
+- participantes recrutados,
+- comunicações enviadas.
+
+---
+
+## 20.2 Aprovações finais
+Para começar a execução, será necessário o aceite final de:
+
+- pesquisador principal,
+- orientador,
+- técnico de infraestrutura.
+
+---
 
 
